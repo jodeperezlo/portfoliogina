@@ -1,0 +1,162 @@
+:root {
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-contraste: 44; /* Yellow 44 -Green 142 - Blue 230 - Pink 340  */
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+
+  --color-medium: hsl(var(--hue-color), 89%, 85%);
+  --color-principal: hsl(var(--hue-color), 69%, 61%);
+  --color-gray: hsl(var(--hue-color), 0%, 80%);
+  --color-gray-medium: hsl(var(--hue-color), 15%, 98%);
+  --color-contraste: hsl(var(--hue-contraste), 95%, 58%);
+}
+/* ------ GENERAL STYLE ------- */
+body {
+  margin-top: 4rem;
+}
+a,
+.nav-link {
+  color: inherit;
+}
+.container > .row {
+  margin-bottom: 3rem;
+}
+/* ------- SCROLL BAR */
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+/* ------ SECTIONS ------- */
+/* ------> Nav */
+.navbar-brand > img {
+  width: 55px;
+}
+.navbar-main .active {
+  text-decoration: underline wavy var(--color-principal);
+  text-underline-offset: 9px;
+}
+
+/* ------> Header */
+.icons-social-networks > a {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-social-networks > a:hover,
+.sec-clients > a:hover {
+  filter: opacity(0.5);
+}
+.icons-social-networks > a,
+.sec-clients > a {
+  transition: 0.3s all;
+}
+.bg-facebook {
+  background-color: #023693;
+}
+.bg-twitter {
+  background-color: #33a9f3;
+}
+.bg-dribbble {
+  background-color: #f1066b;
+}
+
+.photo-frame {
+  font-size: 20px;
+}
+.photo-frame::before,
+.photo-frame::after {
+  content: "";
+  display: block;
+  width: var(--box-size);
+  height: var(--box-size);
+  position: absolute;
+  z-index: -10;
+  animation: turnZ 7s linear alternate-reverse infinite;
+}
+.photo-frame::before {
+  --box-size: 3em;
+  background-image: radial-gradient(
+    var(--color-medium) 50%,
+    var(--color-principal) 50%
+  );
+  top: calc(99% - (var(--box-size) / 2));
+  right: calc(99% - (var(--box-size) / 2));
+}
+
+.photo-frame::after {
+  --box-size: 5em;
+  bottom: calc(98% - (var(--box-size) / 2));
+  left: calc(98% - (var(--box-size) / 2));
+  background: linear-gradient(
+      45deg,
+      var(--color-gray-medium) 45%,
+      transparent 45%
+    ),
+    radial-gradient(
+      var(--color-principal) 30%,
+      var(--color-contraste) 30% 70%,
+      var(--color-gray-medium) 70%,
+      transparent 70%
+    );
+}
+@keyframes turnZ {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.header-main {
+  min-height: 100vh;
+}
+
+/*------------------ 
+Services
+------------------*/
+.icon-service {
+  --box-size: 70px;
+  width: var(--box-size);
+  height: var(--box-size);
+  padding: 10px;
+}
+
+/*------------------ 
+Portfolio
+------------------*/
+.portfolio-item > img {
+  transition: 0.3s all ease;
+}
+.portfolio-item:hover > img {
+  transform: scale(0.96);
+}
+
+/*------------------ 
+Clientes
+------------------*/
+.bg-principal {
+  background-color: var(--color-principal);
+  filter: opacity(0.55);
+}
+
+@media screen and (max-width: 376px) {
+  .header-main {
+    min-height: initial;
+  }
+  .photo-frame {
+    font-size: 11px;
+  }
+}
