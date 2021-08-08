@@ -152,6 +152,17 @@ Clientes
   filter: opacity(0.55);
 }
 
+/*--------------------
+Contact
+---------------------*/
+label {
+  margin: 0.5rem 0;
+}
+
+textarea {
+  resize: none;
+}
+
 @media screen and (max-width: 376px) {
   .header-main {
     min-height: initial;
