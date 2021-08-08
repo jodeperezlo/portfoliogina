@@ -14,25 +14,13 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+// ScrollSpy
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {target: '#mainNav'});
+var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){            
-            document.querySelector('.nav a[href*=' + sectionId + ']').classList.add('active');           
-        }
-        else{            
-            document.querySelector('.nav a[href*=' + sectionId + ']').classList.remove('active');
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
+dataSpyList.forEach( dataSpyEl => {
+    bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();    
+});
 
 
 // ------------------------------------------------------------

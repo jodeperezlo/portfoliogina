@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
-<body class="bg-light">
+<body class="bg-light" data-spy="scroll" data-target="#mainNav">
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light shadow-sm navbar-main">
@@ -37,22 +37,234 @@
     </div>
   </nav>
 
-  <!-- Contenido principal -->
-  <div class="container">
-    <!-- Header -->
-    <section id="secHome">
-      <header class="row align-items-center header-main justify-content-center">
-        <div class="col-md-7 text-center text-md-start">
-          <!-- Greeting -->
-          <h1 class="display-2">
-            <span class="d-blcok">Hello,</span> I'm Gina Adams
-          </h1>
-          <!-- Job -->
-          <p class="text-muted fw-light text-capitalize">
-            Freelance Web & Mobile UI/UX & Love To Play Video Game
+  <!-- Div para el scrollspy -->
+  <div data-spy="scroll" data-target="#mainNav" data-offset="0">
+    <!-- Contenido principal -->
+    <div class="container">
+      <!-- Header -->
+      <section id="secHome">
+        <header class="row align-items-center header-main justify-content-center">
+          <div class="col-md-7 text-center text-md-start">
+            <!-- Greeting -->
+            <h1 class="display-2">
+              <span class="d-blcok">Hello,</span> I'm Gina Adams
+            </h1>
+            <!-- Job -->
+            <p class="text-muted fw-light text-capitalize">
+              Freelance Web & Mobile UI/UX & Love To Play Video Game
+            </p>
+            <!-- Social networks -->
+            <div class="d-none d-md-block icons-social-networks">
+              <!-- FB -->
+              <a href="#" target="_blank" class="bg-facebook">
+                <img src="./assets/img/icons/facebook.svg" alt="Facebook">
+              </a>
+              <!-- TW -->
+              <a href="#" target="_blank" class="bg-twitter mx-3">
+                <img src="./assets/img/icons/twitter.svg" alt="Twitter">
+              </a>
+              <!-- Ddd -->
+              <a href="#" target="_blank" class="bg-dribbble">
+                <img src="./assets/img/icons/dribbble.svg" alt="Dribbble">
+              </a>
+            </div>
+          </div>
+          <div class="col-8 col-md-4">
+            <div class="photo-frame position-relative shadow">
+              <img src="./assets/img/gina.jpeg" alt="Gina Adams" class="w-100">
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <hr class="mt-5">
+
+      <!-- Services -->
+      <section class="row justify-content-around text-center" id="secServices">
+        <h2 class="col-12 display-4 text-capitalize mb-3">
+          What I do?
+        </h2>
+        <!-- Card 1 -->
+        <article class="col-10 col-md-8 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+          <!-- Icon -->
+          <img src="./assets/img/icons/pen.svg" alt="Icon Pen"
+            class="bg-danger bd-gradient d-inline-block rounded-circle mb-3 icon-service">
+          <!-- Title -->
+          <h3 class="text-capitalize">
+            User Experience Desing
+          </h3>
+          <!-- Description -->
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, accusantium odit. Maxime cupiditate
+            ducimus
+            magni.
           </p>
+          <!-- Btn -->
+          <a href="#" class="btn btn-outline-danger">Go</a>
+        </article>
+        <!-- Card 2 -->
+        <article class="col-10 col-md-8 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+          <!-- Icon -->
+          <img src="./assets/img/icons/code.svg" alt="Icon Code"
+            class="bg-warning bd-gradient d-inline-block rounded-circle mb-3 icon-service">
+          <!-- Title -->
+          <h3 class="text-capitalize">
+            Frontend Developer
+          </h3>
+          <!-- Description -->
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, accusantium odit. Maxime cupiditate
+            ducimus
+            magni.
+          </p>
+          <!-- Btn -->
+          <a href="#" class="btn btn-outline-warning">Go</a>
+        </article>
+        <!-- Card 3 -->
+        <article class="col-10 col-md-8 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+          <!-- Icon -->
+          <img src="./assets/img/icons/brand.svg" alt="Icon Brand"
+            class="bg-info bd-gradient d-inline-block rounded-circle mb-3 icon-service">
+          <!-- Title -->
+          <h3 class="text-capitalize">
+            Brand Identity Desing
+          </h3>
+          <!-- Description -->
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, accusantium odit. Maxime cupiditate
+            ducimus
+            magni.
+          </p>
+          <!-- Btn -->
+          <a href="#" class="btn btn-outline-info">Go</a>
+        </article>
+      </section>
+
+      <!-- Who I am -->
+      <section class="row justify-content-center text-center text-md-start">
+        <!-- Title -->
+        <h2 class="col-md-4 text-center display-4 text-capitalize">
+          Who I am?
+        </h2>
+
+        <!-- Info -->
+        <div class="col-10 col-md-8">
+          <p class="text-muted fw-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere soluta itaque fugit asperiores
+            delectus atque. Explicabo incidunt fuga ratione quo, omnis dignissimos repellat velit, amet nesciunt nobis
+            molestias pariatur.
+          </p>
+          <a href="#" download="CV-Gina" class="btn btn-danger rounded-pill px-4">Descargar CV</a>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- Portfolio -->
+      <div class="container separacion" id="secServices"></div>
+      <section id="secPortfolio">
+        <main class="row justify-content-center sec-portfolio-js">
+          <!-- Column #1 -->
+          <div class="col-10 col-md-4 order-2 order-md-1">
+            <div class="row">
+              <!-- IMG 1 -->
+              <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                <img src="./assets/img/portfolio/Portfolio-03.png" alt="Modelado 3D" class="w-100 img-btn-modal-js">
+              </a>
+              <!-- IMG 2 -->
+              <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                <img src="./assets/img/portfolio/Portfolio-04.png" alt="Diseño gráfico" class="w-100 img-btn-modal-js">
+              </a>
+              <!-- IMG 3 -->
+              <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                <img src="./assets/img/portfolio/Portfolio-01.png" alt="Branding" class="w-100 img-btn-modal-js">
+              </a>
+            </div>
+          </div>
+          <!-- Column #2 -->
+          <div class="col-10 col-md-8 order-1 order-md-2">
+            <h2 class="col-12 py-3 text-end display-4">Portfolio</h2>
+            <!-- IMG 1 -->
+            <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+              <img src="./assets/img/portfolio/Portfolio-05.png" alt="Web Desing" class="w-100 img-btn-modal-js">
+            </a>
+            <div class="row">
+              <!-- IMG 2 -->
+              <a href="#" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal"
+                data-bs-target="#modal-portfolio">
+                <img src="./assets/img/portfolio/Portfolio–02.png" alt="Illustration" class="w-100 img-btn-modal-js">
+              </a>
+              <!-- IMG 3 -->
+              <a href="#" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal"
+                data-bs-target="#modal-portfolio">
+                <img src="./assets/img/portfolio/Portfolio-06.png" alt="Branding" class="w-100 img-btn-modal-js">
+              </a>
+            </div>
+          </div>
+          <!-- General modal -->
+          <div class="col-9 modal fade" id="modal-portfolio">
+            <div class="modal-dialog position-relative modal-dialog-center">
+              <img src="" alt="" class="w-100 img-modal-js">
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+
+    <!-- Clients container -->
+    <div class="bg-principal d-none d-md-block">
+      <!-- Brands -->
+      <div class="container">
+        <div class="row align-items-center justify-content-around py-5 sec-clients">
+          <!-- Elemento 1 -->
+          <a href="#" class="col-5 col-md-3">
+            <img src="./assets/img/customers/dashlane.svg" alt="Dashlane" class="w-75">
+          </a>
+          <!-- Elemento 2 -->
+          <a href="#" class="col-5 col-md-3">
+            <img src="./assets/img/customers/aerospike.svg" alt="Aerospike" class="w-75">
+          </a>
+          <!-- Elemento 3 -->
+          <a href="#" class="col-5 col-md-3">
+            <img src="./assets/img/customers/typo3.svg" alt="Typo 3" class="w-75">
+          </a>
+          <!-- Elemento 4 -->
+          <a href="#" class="col-5 col-md-3">
+            <img src="./assets/img/customers/kong.svg" alt="Kong" class="w-75">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="secContact">
+
+      <!-- Contenedor contacto -->
+      <div class="container">
+        <!-- Contacto -->
+        <section class="row justify-content-center">
+          <div class="col-9 col-lg-7 bg-white text-center py-4 px-4 shadow position-relative photo-frame">
+            <p class="h6 text-muted fw-light">
+              Have any in mind? Say hello.
+            </p>
+            <a href="mailto:gina@correo.com" class="h3 text-decoration-none text-break">adamsgina@email.com</a>
+          </div>
+        </section>
+        <!-- Navbar -->
+        <div class="row justify-content-center text-center">
+          <!-- Brand -->
+          <a href="index.html" class="navbar-brand">
+            <img src="./assets/img/logo-g.png" alt="Brand Gina Adams">
+          </a>
+          <!-- Items -->
+          <nav class="nav col-11 justify-content-center mb-4">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#secServices" class="nav-link">Services</a>
+            <a href="#secPortfolio" class="nav-link">Portfolio</a>
+            <a href="#secContact" class="nav-link">Contact</a>
+          </nav>
           <!-- Social networks -->
-          <div class="d-none d-md-block icons-social-networks">
+          <div class="icons-social-networks">
             <!-- FB -->
             <a href="#" target="_blank" class="bg-facebook">
               <img src="./assets/img/icons/facebook.svg" alt="Facebook">
@@ -67,274 +279,69 @@
             </a>
           </div>
         </div>
-        <div class="col-8 col-md-4">
-          <div class="photo-frame position-relative shadow">
-            <img src="./assets/img/gina.jpeg" alt="Gina Adams" class="w-100">
-          </div>
-        </div>
-      </header>
-    </section>
-
-    <hr class="mt-5">
-
-    <!-- Services -->
-    <section class="row justify-content-around text-center" id="secServices">
-      <h2 class="col-12 display-4 text-capitalize mb-3">
-        What I do?
-      </h2>
-      <!-- Card 1 -->
-      <article class="col-10 col-md-8 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
-        <!-- Icon -->
-        <img src="./assets/img/icons/pen.svg" alt="Icon Pen"
-          class="bg-danger bd-gradient d-inline-block rounded-circle mb-3 icon-service">
-        <!-- Title -->
-        <h3 class="text-capitalize">
-          User Experience Desing
-        </h3>
-        <!-- Description -->
-        <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, accusantium odit. Maxime cupiditate ducimus
-          magni.
-        </p>
-        <!-- Btn -->
-        <a href="#" class="btn btn-outline-danger">Go</a>
-      </article>
-      <!-- Card 2 -->
-      <article class="col-10 col-md-8 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
-        <!-- Icon -->
-        <img src="./assets/img/icons/code.svg" alt="Icon Code"
-          class="bg-warning bd-gradient d-inline-block rounded-circle mb-3 icon-service">
-        <!-- Title -->
-        <h3 class="text-capitalize">
-          Frontend Developer
-        </h3>
-        <!-- Description -->
-        <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, accusantium odit. Maxime cupiditate ducimus
-          magni.
-        </p>
-        <!-- Btn -->
-        <a href="#" class="btn btn-outline-warning">Go</a>
-      </article>
-      <!-- Card 3 -->
-      <article class="col-10 col-md-8 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
-        <!-- Icon -->
-        <img src="./assets/img/icons/brand.svg" alt="Icon Brand"
-          class="bg-info bd-gradient d-inline-block rounded-circle mb-3 icon-service">
-        <!-- Title -->
-        <h3 class="text-capitalize">
-          Brand Identity Desing
-        </h3>
-        <!-- Description -->
-        <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, accusantium odit. Maxime cupiditate ducimus
-          magni.
-        </p>
-        <!-- Btn -->
-        <a href="#" class="btn btn-outline-info">Go</a>
-      </article>
-    </section>
-
-    <!-- Who I am -->
-    <section class="row justify-content-center text-center text-md-start">
-      <!-- Title -->
-      <h2 class="col-md-4 text-center display-4 text-capitalize">
-        Who I am?
-      </h2>
-
-      <!-- Info -->
-      <div class="col-10 col-md-8">
-        <p class="text-muted fw-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere soluta itaque fugit asperiores
-          delectus atque. Explicabo incidunt fuga ratione quo, omnis dignissimos repellat velit, amet nesciunt nobis
-          molestias pariatur.
-        </p>
-        <a href="#" download="CV-Gina" class="btn btn-danger rounded-pill px-4">Descargar CV</a>
       </div>
-    </section>
-
-    <hr>
-
-    <!-- Portfolio -->
-    <div class="container separacion" id="secServices"></div>
-    <section id="secPortfolio">
-      <main class="row justify-content-center sec-portfolio-js">
-        <!-- Column #1 -->
-        <div class="col-10 col-md-4 order-2 order-md-1">
-          <div class="row">
-            <!-- IMG 1 -->
-            <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
-              <img src="./assets/img/portfolio/Portfolio-03.png" alt="Modelado 3D" class="w-100 img-btn-modal-js">
-            </a>
-            <!-- IMG 2 -->
-            <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
-              <img src="./assets/img/portfolio/Portfolio-04.png" alt="Diseño gráfico" class="w-100 img-btn-modal-js">
-            </a>
-            <!-- IMG 3 -->
-            <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
-              <img src="./assets/img/portfolio/Portfolio-01.png" alt="Branding" class="w-100 img-btn-modal-js">
-            </a>
-          </div>
-        </div>
-        <!-- Column #2 -->
-        <div class="col-10 col-md-8 order-1 order-md-2">
-          <h2 class="col-12 py-3 text-end display-4">Portfolio</h2>
-          <!-- IMG 1 -->
-          <a href="#" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
-            <img src="./assets/img/portfolio/Portfolio-05.png" alt="Web Desing" class="w-100 img-btn-modal-js">
-          </a>
-          <div class="row">
-            <!-- IMG 2 -->
-            <a href="#" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal"
-              data-bs-target="#modal-portfolio">
-              <img src="./assets/img/portfolio/Portfolio–02.png" alt="Illustration" class="w-100 img-btn-modal-js">
-            </a>
-            <!-- IMG 3 -->
-            <a href="#" class="col-12 col-md-6 mb-3 portfolio-item" data-bs-toggle="modal"
-              data-bs-target="#modal-portfolio">
-              <img src="./assets/img/portfolio/Portfolio-06.png" alt="Branding" class="w-100 img-btn-modal-js">
-            </a>
-          </div>
-        </div>
-        <!-- General modal -->
-        <div class="col-9 modal fade" id="modal-portfolio">
-          <div class="modal-dialog position-relative modal-dialog-center">
-            <img src="" alt="" class="w-100 img-modal-js">
-          </div>
-        </div>
-      </main>
-    </section>
-  </div>
-
-  <!-- Clients container -->
-  <div class="bg-principal d-none d-md-block">
-    <!-- Brands -->
-    <div class="container">
-      <div class="row align-items-center justify-content-around py-5 sec-clients">
-        <!-- Elemento 1 -->
-        <a href="#" class="col-5 col-md-3">
-          <img src="./assets/img/customers/dashlane.svg" alt="Dashlane" class="w-75">
-        </a>
-        <!-- Elemento 2 -->
-        <a href="#" class="col-5 col-md-3">
-          <img src="./assets/img/customers/aerospike.svg" alt="Aerospike" class="w-75">
-        </a>
-        <!-- Elemento 3 -->
-        <a href="#" class="col-5 col-md-3">
-          <img src="./assets/img/customers/typo3.svg" alt="Typo 3" class="w-75">
-        </a>
-        <!-- Elemento 4 -->
-        <a href="#" class="col-5 col-md-3">
-          <img src="./assets/img/customers/kong.svg" alt="Kong" class="w-75">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact -->
-  <section id="secContact">
-
-    <!-- Contenedor contacto -->
-    <div class="container">
-      <!-- Contacto -->
-      <section class="row justify-content-center">
-        <div class="col-9 col-lg-7 bg-white text-center py-4 px-4 shadow position-relative photo-frame">
-          <p class="h6 text-muted fw-light">
-            Have any in mind? Say hello.
-          </p>
-          <a href="mailto:gina@correo.com" class="h3 text-decoration-none text-break">adamsgina@email.com</a>
-        </div>
-      </section>
-      <!-- Navbar -->
-      <div class="row justify-content-center text-center">
-        <!-- Brand -->
-        <a href="index.html" class="navbar-brand">
-          <img src="./assets/img/logo-g.png" alt="Brand Gina Adams">
-        </a>
-        <!-- Items -->
-        <nav class="nav col-11 justify-content-center mb-4">
-          <a href="#home" class="nav-link active">Home</a>
-          <a href="#secServices" class="nav-link">Services</a>
-          <a href="#secPortfolio" class="nav-link">Portfolio</a>
-          <a href="#secContact" class="nav-link">Contact</a>
-        </nav>
-        <!-- Social networks -->
-        <div class="icons-social-networks">
-          <!-- FB -->
-          <a href="#" target="_blank" class="bg-facebook">
-            <img src="./assets/img/icons/facebook.svg" alt="Facebook">
-          </a>
-          <!-- TW -->
-          <a href="#" target="_blank" class="bg-twitter mx-3">
-            <img src="./assets/img/icons/twitter.svg" alt="Twitter">
-          </a>
-          <!-- Ddd -->
-          <a href="#" target="_blank" class="bg-dribbble">
-            <img src="./assets/img/icons/dribbble.svg" alt="Dribbble">
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Contact me Form -->
-    <div class="container mb-3">
-      <h2 class="col-12 display-4 text-capitalize text-center mb-3">
-        Contact me
-      </h2>
-      <!-- Form -->
-      <form class="container needs-validation" novalidate>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input title="Write your complete name" type="text" class="bg-light outline-none form-control" id="name"
-            placeholder="Complete name" required>
-          <div class="invalid-feedback">
-            Please write your name.
-          </div>
-        </div>
-        <div class="row mb-0">
-          <div class="form-group col-12 col-md-6">
-            <label for="email">Email:</label>
-            <input title="Write your email address" type="email" class="bg-light outline-none form-control" id="email"
-              placeholder="Example: email@email.com" required>
+      <!-- Contact me Form -->
+      <div class="container mb-3">
+        <h2 class="col-12 display-4 text-capitalize text-center mb-3">
+          Contact me
+        </h2>
+        <!-- Form -->
+        <form class="container needs-validation" novalidate>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input title="Write your complete name" type="text" class="bg-light outline-none form-control" id="name"
+              placeholder="Complete name" required>
             <div class="invalid-feedback">
-              Please provide a valid email.
+              Please write your name.
             </div>
           </div>
-          <div class="form-group col-12 col-md-6">
-            <label for="subject">Subject:</label>
-            <input title="Write a subject for the message" type="text" class="bg-light outline-none form-control"
-              placeholder="Subject or reason" id="subject" required>
-            <div class="invalid-feedback">
-              Please write a subject valid.
+          <div class="row mb-0">
+            <div class="form-group col-12 col-md-6">
+              <label for="email">Email:</label>
+              <input title="Write your email address" type="email" class="bg-light outline-none form-control" id="email"
+                placeholder="Example: email@email.com" required>
+              <div class="invalid-feedback">
+                Please provide a valid email.
+              </div>
+            </div>
+            <div class="form-group col-12 col-md-6">
+              <label for="subject">Subject:</label>
+              <input title="Write a subject for the message" type="text" class="bg-light outline-none form-control"
+                placeholder="Subject or reason" id="subject" required>
+              <div class="invalid-feedback">
+                Please write a subject valid.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea title="Write your message" class="bg-light outline-none form-control" id="message" rows="4"
-            placeholder="Doubts, comments, suggestions, contact me right now." required></textarea>
-          <div class="invalid-feedback">
-            Please write a message valid.
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea title="Write your message" class="bg-light outline-none form-control" id="message" rows="4"
+              placeholder="Doubts, comments, suggestions, contact me right now." required></textarea>
+            <div class="invalid-feedback">
+              Please write a message valid.
+            </div>
           </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-12 d-flex justify-content-center justify-content-md-end">
-            <button type="submit" class="btn text-light col-12 col-md-3 btnSubmit">Submit</button>
+          <div class="row mt-3">
+            <div class="col-12 d-flex justify-content-center justify-content-md-end">
+              <button type="submit" class="btn text-light col-12 col-md-3 btnSubmit">Submit</button>
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
-  </section>
+        </form>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-principal text-center p-4">
-    <p class="text-light">
-      &copy; Jorge de Jesús Pérez López. All rights reserved.
-    </p>
-  </footer>
+    <!-- Footer -->
+    <footer class="bg-principal text-center p-4">
+      <p class="text-light">
+        &copy; Jorge de Jesús Pérez López. All rights reserved.
+      </p>
+    </footer>
 
-  <!-- Btn Up -->
-  <a href="#" class="btn text-light btnUp zindex-dropdown px-3 position-fixed" id="scroll-up">
-    &#708;</a>
+    <!-- Btn Up -->
+    <a href="#" class="btn text-light btnUp zindex-dropdown px-3 position-fixed" id="scroll-up">
+      &#708;</a>
+
+  </div> <!-- Termina scrollspy -->
 
   <!-- JS Bootstrap -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
