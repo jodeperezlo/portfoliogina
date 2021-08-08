@@ -163,6 +163,17 @@ textarea {
   resize: none;
 }
 
+.btnSubmit {
+  background-color: var(--color-principal);
+  outline: none;
+  border: none;
+  transition: 0.3s all ease;
+}
+.btnSubmit:hover {
+  background-color: var(--color-principal);
+  filter: opacity(0.9);
+  color: var(--color-gray);
+}
 @media screen and (max-width: 376px) {
   .header-main {
     min-height: initial;
