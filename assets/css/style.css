@@ -14,15 +14,15 @@
   --color-contraste: hsl(var(--hue-contraste), 95%, 58%);
 }
 /* ------ GENERAL STYLE ------- */
-body {
-  margin-top: 4rem;
-}
 a,
 .nav-link {
   color: inherit;
 }
 .container > .row {
   margin-bottom: 3rem;
+}
+section {
+  padding-top: 4rem;
 }
 /* ------- SCROLL BAR */
 /*========== SCROLL BAR ==========*/

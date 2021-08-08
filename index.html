@@ -28,7 +28,7 @@
       <!-- Items -->
       <div class="collapse navbar-collapse" id="mainNav">
         <div class="nav ms-auto text-dark flex-column flex-md-row">
-          <a href="#home" class="nav-link active">Home</a>
+          <a href="#secHome" class="nav-link active">Home</a>
           <a href="#secServices" class="nav-link">Services</a>
           <a href="#secPortfolio" class="nav-link">Portfolio</a>
           <a href="#secContact" class="nav-link">Contact</a>
@@ -40,7 +40,7 @@
   <!-- Contenido principal -->
   <div class="container">
     <!-- Header -->
-    <section id="home">
+    <section id="secHome">
       <header class="row align-items-center header-main justify-content-center">
         <div class="col-md-7 text-center text-md-start">
           <!-- Greeting -->
@@ -78,7 +78,8 @@
     <hr>
 
     <!-- Services -->
-    <section class="row justify-content-around text-center" id="secServices">
+    <div class="container separacion" id="secServices"></div>
+    <section class="row justify-content-around text-center">
       <h2 class="col-12 display-4 text-capitalize mb-3">
         What I do?
       </h2>
@@ -156,6 +157,7 @@
     <hr>
 
     <!-- Portfolio -->
+    <div class="container separacion" id="secServices"></div>
     <section id="secPortfolio">
       <main class="row justify-content-center pt-5 sec-portfolio-js">
         <!-- Column #1 -->
@@ -205,32 +207,33 @@
     </section>
   </div>
 
-  <!-- Contact -->
-  <section id="secContact">
-    <!-- Clients container -->
-    <div class="bg-principal d-none d-md-block">
-      <!-- Brands -->
-      <div class="container">
-        <div class="row align-items-center justify-content-around py-5 sec-clients">
-          <!-- Elemento 1 -->
-          <a href="#" class="col-5 col-md-3">
-            <img src="./assets/img/customers/dashlane.svg" alt="Dashlane" class="w-75">
-          </a>
-          <!-- Elemento 2 -->
-          <a href="#" class="col-5 col-md-3">
-            <img src="./assets/img/customers/aerospike.svg" alt="Aerospike" class="w-75">
-          </a>
-          <!-- Elemento 3 -->
-          <a href="#" class="col-5 col-md-3">
-            <img src="./assets/img/customers/typo3.svg" alt="Typo 3" class="w-75">
-          </a>
-          <!-- Elemento 4 -->
-          <a href="#" class="col-5 col-md-3">
-            <img src="./assets/img/customers/kong.svg" alt="Kong" class="w-75">
-          </a>
-        </div>
+  <!-- Clients container -->
+  <div class="bg-principal d-none d-md-block">
+    <!-- Brands -->
+    <div class="container">
+      <div class="row align-items-center justify-content-around py-5 sec-clients">
+        <!-- Elemento 1 -->
+        <a href="#" class="col-5 col-md-3">
+          <img src="./assets/img/customers/dashlane.svg" alt="Dashlane" class="w-75">
+        </a>
+        <!-- Elemento 2 -->
+        <a href="#" class="col-5 col-md-3">
+          <img src="./assets/img/customers/aerospike.svg" alt="Aerospike" class="w-75">
+        </a>
+        <!-- Elemento 3 -->
+        <a href="#" class="col-5 col-md-3">
+          <img src="./assets/img/customers/typo3.svg" alt="Typo 3" class="w-75">
+        </a>
+        <!-- Elemento 4 -->
+        <a href="#" class="col-5 col-md-3">
+          <img src="./assets/img/customers/kong.svg" alt="Kong" class="w-75">
+        </a>
       </div>
     </div>
+  </div>
+
+  <!-- Contact -->
+  <section id="secContact">
 
     <!-- Contenedor contacto -->
     <div class="container">
@@ -273,7 +276,6 @@
         </div>
       </div>
     </div>
-
     <!-- Form -->
     <div class="container mb-3">
       <h2 class="col-12 display-4 text-capitalize text-center mb-3">
